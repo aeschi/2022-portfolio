@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { kebabCase } from "lodash";
 import { Link, graphql, StaticQuery } from "gatsby";
 import PreviewCompatibleImage from "./PreviewCompatibleImage";
 
@@ -30,8 +31,18 @@ class BlogRollTemplate extends React.Component {
               </p>
               <p>{post.frontmatter.description}</p>
 
-              <br></br>
-              {post.frontmatter.tags}
+              {post.frontmatter.tags && post.frontmatter.tags.length ? (
+                <div style={{ marginTop: `4rem` }}>
+                  <h4>Tags</h4>
+                  <ul className="taglist">
+                    {post.frontmatter.tags.map((tag) => (
+                      <li key={tag + `tag`}>
+                        <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ) : null}
             </div>
           ))}
       </div>
@@ -71,7 +82,7 @@ export default function BlogRoll() {
                   featuredpost
                   featuredimage {
                     childImageSharp {
-                      gatsbyImageData(width: 120, quality: 100, layout: CONSTRAINED)
+                      gatsbyImageData(width: 300, quality: 100, layout: CONSTRAINED)
                     }
                   }
                 }
