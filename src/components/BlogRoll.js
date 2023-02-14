@@ -13,23 +13,21 @@ class BlogRollTemplate extends React.Component {
         {posts &&
           posts.map(({ node: post }) => (
             <div className="is-parent column is-6" key={post.id}>
-              <header>
-                {post.frontmatter.featuredimage ? (
-                  <PreviewCompatibleImage
-                    imageInfo={{
-                      image: post.frontmatter.featuredimage,
-                      alt: `featured image thumbnail for post ${post.frontmatter.title}`,
-                      width: post.frontmatter.featuredimage.childImageSharp.gatsbyImageData.width,
-                      height: post.frontmatter.featuredimage.childImageSharp.gatsbyImageData.height,
-                    }}
-                  />
-                ) : null}
-                <p className="post-meta">
-                  <Link className="title has-text-primary is-size-4" to={post.fields.slug}>
-                    {post.frontmatter.title}
-                  </Link>
-                </p>
-              </header>
+              {post.frontmatter.featuredimage ? (
+                <PreviewCompatibleImage
+                  imageInfo={{
+                    image: post.frontmatter.featuredimage,
+                    alt: `featured image thumbnail for post ${post.frontmatter.title}`,
+                    width: post.frontmatter.featuredimage.childImageSharp.gatsbyImageData.width,
+                    height: post.frontmatter.featuredimage.childImageSharp.gatsbyImageData.height,
+                  }}
+                />
+              ) : null}
+              <p className="post-meta">
+                <Link className="title has-text-primary is-size-4" to={post.fields.slug}>
+                  {post.frontmatter.title}
+                </Link>
+              </p>
               <p>{post.frontmatter.description}</p>
 
               <br></br>
