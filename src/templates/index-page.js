@@ -7,18 +7,13 @@ import BlogRoll from "../components/BlogRoll";
 export const IndexPageTemplate = ({ mainpitch, description }) => {
   return (
     <div>
-      <div className="content">
-        <div className="content">
-          <div className="tile">
-            <h1 className="title">{mainpitch.title}</h1>
-          </div>
-        </div>
-        {/* <div className="column is-12"> */}
-        <BlogRoll />
-        {/* </div> */}
+      <div className="indexContainer">
+        <h1 className="title">{mainpitch.title}</h1>
         <h3 className="subtitle">{mainpitch.description}</h3>
-
         <p>{description}</p>
+      </div>
+      <div className="postsContainer">
+        <BlogRoll />
       </div>
     </div>
   );
