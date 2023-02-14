@@ -19,12 +19,7 @@ collections:
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - {
-          label: "Template Key",
-          name: "templateKey",
-          widget: "hidden",
-          default: "blog-post",
-        }
+      - { label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Description", name: "description", widget: "text" }
@@ -40,12 +35,7 @@ collections:
         label: "Landing Page"
         name: "index"
         fields:
-          - {
-              label: "Template Key",
-              name: "templateKey",
-              widget: "hidden",
-              default: "index-page",
-            }
+          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page" }
           - { label: Title, name: title, widget: string }
           - { label: Image, name: image, widget: image }
           - { label: Heading, name: heading, widget: string }
@@ -125,12 +115,7 @@ collections:
         label: "About"
         name: "about"
         fields:
-          - {
-              label: "Template Key",
-              name: "templateKey",
-              widget: "hidden",
-              default: "about-page",
-            }
+          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page" }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
       - file: "src/pages/products/index.md"
@@ -234,11 +219,7 @@ collections:
                       [
                         { label: Plan, name: plan, widget: string },
                         { label: Price, name: price, widget: string },
-                        {
-                          label: Description,
-                          name: description,
-                          widget: string,
-                        },
+                        { label: Description, name: description, widget: string },
                         { label: Items, name: items, widget: list },
                       ],
                   },
