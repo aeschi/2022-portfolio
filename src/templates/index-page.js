@@ -13,13 +13,11 @@ export const IndexPageTemplate = ({ mainpitch, description }) => {
             <h1 className="title">{mainpitch.title}</h1>
           </div>
         </div>
-        <div className="column is-12">
-          <BlogRoll />
-        </div>
+        {/* <div className="column is-12"> */}
+        <BlogRoll />
+        {/* </div> */}
+        <h3 className="subtitle">{mainpitch.description}</h3>
 
-        <div className="tile">
-          <h3 className="subtitle">{mainpitch.description}</h3>
-        </div>
         <p>{description}</p>
       </div>
     </div>
