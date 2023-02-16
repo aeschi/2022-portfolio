@@ -4,7 +4,7 @@ const Footer = class extends React.Component {
   render() {
     return (
       <footer>
-        <div style={{ maxWidth: "100vw" }} className="columns">
+        <div style={{ maxWidth: "100vw" }}>
           <a href="/admin/" target="_blank" rel="noopener noreferrer">
              Admin 
           </a>

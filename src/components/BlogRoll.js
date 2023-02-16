@@ -3,17 +3,20 @@ import PropTypes from "prop-types";
 import { kebabCase } from "lodash";
 import { Link, graphql, StaticQuery } from "gatsby";
 import PreviewCompatibleImage from "./PreviewCompatibleImage";
+import Content, { HTMLContent } from "../components/Content";
 
 class BlogRollTemplate extends React.Component {
   render() {
     const { data } = this.props;
     const { edges: posts } = data.allMarkdownRemark;
 
+    const PostContent = HTMLContent || Content;
+
     return (
       <div>
         {posts &&
           posts.map(({ node: post }) => (
-            <div className="is-parent column is-6" key={post.id}>
+            <div className="projects_post" key={post.id}>
               {post.frontmatter.featuredimage ? (
                 <PreviewCompatibleImage
                   imageInfo={{
@@ -24,12 +27,13 @@ class BlogRollTemplate extends React.Component {
                   }}
                 />
               ) : null}
-              <p className="post-meta">
-                <Link className="title has-text-primary is-size-4" to={post.fields.slug}>
-                  {post.frontmatter.title}
-                </Link>
-              </p>
+              <Link className="title" to={post.fields.slug}>
+                {post.frontmatter.title}
+              </Link>
+
               <p>{post.frontmatter.description}</p>
+
+              {/* <PostContent content={post.html} /> */}
 
               {post.frontmatter.tags && post.frontmatter.tags.length ? (
                 <div style={{ marginTop: `4rem` }}>
@@ -70,6 +74,7 @@ export default function BlogRoll() {
             edges {
               node {
                 id
+                html
                 fields {
                   slug
                 }
