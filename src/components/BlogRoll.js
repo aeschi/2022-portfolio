@@ -16,37 +16,41 @@ class BlogRollTemplate extends React.Component {
       <div>
         {posts &&
           posts.map(({ node: post }) => (
-            <div className="projects_post" key={post.id}>
-              {post.frontmatter.featuredimage ? (
-                <PreviewCompatibleImage
-                  imageInfo={{
-                    image: post.frontmatter.featuredimage,
-                    alt: `featured image thumbnail for post ${post.frontmatter.title}`,
-                    width: post.frontmatter.featuredimage.childImageSharp.gatsbyImageData.width,
-                    height: post.frontmatter.featuredimage.childImageSharp.gatsbyImageData.height,
-                  }}
-                />
-              ) : null}
-              <Link className="title" to={post.fields.slug}>
-                {post.frontmatter.title}
-              </Link>
+            <div className="projects__post" key={post.id}>
+              <div className="projects__post__image">
+                {post.frontmatter.featuredimage ? (
+                  <PreviewCompatibleImage
+                    imageInfo={{
+                      image: post.frontmatter.featuredimage,
+                      alt: `featured image thumbnail for post ${post.frontmatter.title}`,
+                      width: post.frontmatter.featuredimage.childImageSharp.gatsbyImageData.width,
+                      height: post.frontmatter.featuredimage.childImageSharp.gatsbyImageData.height,
+                    }}
+                  />
+                ) : null}
+              </div>
+              <div className="projects__post__description">
+                <p className="projects__post__description__text">{post.frontmatter.description}</p>
 
-              <p>{post.frontmatter.description}</p>
+                {/* <PostContent content={post.html} /> */}
 
-              {/* <PostContent content={post.html} /> */}
-
-              {post.frontmatter.tags && post.frontmatter.tags.length ? (
-                <div style={{ marginTop: `4rem` }}>
-                  <h4>Tags</h4>
-                  <ul className="taglist">
+                {post.frontmatter.tags && post.frontmatter.tags.length ? (
+                  <div className="projects__post__tags">
                     {post.frontmatter.tags.map((tag) => (
-                      <li key={tag + `tag`}>
-                        <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
-                      </li>
+                      <p className="projects__post__tags__element" key={tag + `tag`}>
+                        {/* <Link to={`/tags/${kebabCase(tag)}/`}> */}
+                        {tag}
+                        {/* </Link> */}
+                      </p>
                     ))}
-                  </ul>
-                </div>
-              ) : null}
+                  </div>
+                ) : null}
+              </div>
+              <div className="projects__post__titlebox">
+                {/* <Link to={post.fields.slug}> */}
+                <h2 className="projects__post__titlebox__title">{post.frontmatter.title}</h2>
+                {/* </Link> */}
+              </div>
             </div>
           ))}
       </div>
@@ -87,7 +91,7 @@ export default function BlogRoll() {
                   featuredpost
                   featuredimage {
                     childImageSharp {
-                      gatsbyImageData(width: 300, quality: 100, layout: CONSTRAINED)
+                      gatsbyImageData(width: 300, height: 300, quality: 100, layout: CONSTRAINED)
                     }
                   }
                 }

@@ -12,7 +12,6 @@ class IndexRollTemplate extends React.Component {
         {posts &&
           posts.map(({ node: post }, index) => (
             <div key={post.id}>
-              {console.log(index)}
               {/* <Link className="title" to={post.fields.slug}> */}
               <h2>
                 {index + 1 + ". "}
@@ -46,7 +45,6 @@ export default function IndexRoll() {
             edges {
               node {
                 id
-                html
                 fields {
                   slug
                 }
