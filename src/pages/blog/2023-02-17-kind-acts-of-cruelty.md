@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: Kind Acts of Cruelty
-date: 2023-02-17T14:51:21.768Z
+date: 2021-06-24T13:51:21.768Z
 description: >-
   A microaggression is a comment or gesture (whether made intentionally or not)
   that feeds into stereotypes or negative assumptions created around oppressed
