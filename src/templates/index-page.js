@@ -4,6 +4,7 @@ import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import Footer from "../components/Footer";
 import BlogRoll from "../components/BlogRoll";
+import IndexRoll from "../components/IndexRoll";
 
 export const IndexPageTemplate = ({ mainpitch, description }) => {
   return (
@@ -13,15 +14,7 @@ export const IndexPageTemplate = ({ mainpitch, description }) => {
           <h1 className="intro__title_header">{mainpitch.title}</h1>
         </div>
         <div className="intro__index">
-          <h2>1. Klimakarten</h2>
-          <h2>2. Die gute Nachricht</h2>
-          <h2>3. Rongin Shagor</h2>
-          <h2>4. Real Time War Rug</h2>
-          <h2>5. Kind acts of cruelty</h2>
-          <h2>6. Walking Home Alone</h2>
-          <h2>7. XXXXX</h2>
-          <h2>8. XXX</h2>
-          <h2>9. Archive</h2>
+          <IndexRoll />
         </div>
         <div className="intro__description">
           <h3 className="intro__description__main">{mainpitch.description}</h3>
