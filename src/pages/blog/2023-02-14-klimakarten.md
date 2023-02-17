@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: Klimakarten
-date: 2023-02-14T14:21:59.396Z
+date: 2022-12-03T14:21:59.396Z
 description: >-
   In collaboration with the newspaper taz, we designed and produced both
   physical and digital postcards containing visualizations covering various
