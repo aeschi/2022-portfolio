@@ -15,7 +15,7 @@ class BlogRollTemplate extends React.Component {
     return (
       <div>
         {posts &&
-          posts.map(({ node: post }) => (
+          posts.map(({ node: post }, index) => (
             <div className="projects__post" key={post.id}>
               <div className="projects__post__image">
                 {post.frontmatter.featuredimage ? (
@@ -48,7 +48,11 @@ class BlogRollTemplate extends React.Component {
               </div>
               <div className="projects__post__titlebox">
                 {/* <Link to={post.fields.slug}> */}
-                <h2 className="projects__post__titlebox__title">{post.frontmatter.title}</h2>
+                <h2 className="projects__post__titlebox__title">
+                  {" "}
+                  {index + 1 + ". "}
+                  {post.frontmatter.title}
+                </h2>
                 {/* </Link> */}
               </div>
             </div>
@@ -91,7 +95,7 @@ export default function BlogRoll() {
                   featuredpost
                   featuredimage {
                     childImageSharp {
-                      gatsbyImageData(width: 300, height: 300, quality: 100, layout: CONSTRAINED)
+                      gatsbyImageData(width: 250, height: 250, quality: 100, layout: CONSTRAINED)
                     }
                   }
                 }
