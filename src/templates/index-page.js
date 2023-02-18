@@ -21,9 +21,7 @@ export const IndexPageTemplate = ({ mainpitch, description }) => {
           <p className="intro__description__extra">{description}</p>
         </div>
 
-        <div className="intro__footer">
-          <Footer />
-        </div>
+        <Footer />
       </div>
       <div className="projects">
         <BlogRoll />

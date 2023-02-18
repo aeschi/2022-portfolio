@@ -1,26 +1,47 @@
 import * as React from "react";
+import { Link } from "gatsby";
 
 const Footer = class extends React.Component {
   render() {
     return (
-      <footer>
-        <div style={{ maxWidth: "100vw" }}>
-          <a href="/admin/" target="_blank" rel="noopener noreferrer">
-             Admin 
+      <footer className="intro__footer">
+        <div className="intro__footer__links">
+          <a
+            className="intro__footer__links__element"
+            title="email"
+            target="_blank"
+            href="mailto:anna.eschenbacher@icloud.com"
+          >
+            E-Mail
           </a>
-          <a title="email" href="mailto:anna.eschenbacher@icloud.com">
-            E-Mail 
+          <a
+            className="intro__footer__links__element"
+            title="Github"
+            target="_blank"
+            href="https://github.com/aeschi"
+          >
+            Github
           </a>
-          <a title="Github" href="https://github.com">
-            Github 
+          <a
+            className="intro__footer__links__element"
+            title="instagram"
+            target="_blank"
+            href="https://www.instagram.com/anna_eschi/"
+          >
+            Instagram
           </a>
-          <a title="instagram" href="https://instagram.com">
-            Instagram 
-          </a>
-          <a title="twitter" href="https://twitter.com">
-            Twitter
+          <a
+            className="intro__footer__links__element"
+            title="LinkedIn"
+            href="https://www.linkedin.com/in/anna-eschenbacher/"
+            target="_blank"
+          >
+            LinkedIn
           </a>
         </div>
+        <Link className="intro__footer__imprint" to={`/imprintdata`}>
+          Impr./Dat. © 2023 Anna Eschenbacher
+        </Link>
       </footer>
     );
   }
