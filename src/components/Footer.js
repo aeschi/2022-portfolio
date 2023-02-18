@@ -39,7 +39,7 @@ const Footer = class extends React.Component {
             LinkedIn
           </a>
         </div>
-        <Link className="intro__footer__imprint" to={`/imprintdata`}>
+        <Link className="intro__footer__imprint" to={`/about`}>
           Impr./Dat. © 2023 Anna Eschenbacher
         </Link>
       </footer>
