@@ -53,16 +53,21 @@ h2,h3
         width: 100vw
 
     .projects__post__image
+        order: 1
         align-self: center
+
+    .projects__post__description
+        order: 2
 
     .projects__post
         flex-direction: column
 
     .projects__post__titlebox
         width: 100vw
-        border-top: 1px solid $dark-gray
+        border-bottom: 1px solid $dark-gray
 
     .projects__post__titlebox__title
+        order: 0
         padding-left: 1rem
         transform-origin: none
         transform: rotate(0deg) translate(0rem,0px)
