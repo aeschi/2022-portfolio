@@ -13,7 +13,7 @@ Datenschutzrechtlich verantwortlich für die Erhebung und Verarbeitung von perso
 \
 **Vorname, Name:** Anna Eschenbacher\
 **Straße, Hausnummer:** Richard-Sorge-Straße 25\
-**Postleitzahl, Ort:** Berlin\
+**Postleitzahl, Ort:** 10249, Berlin\
 **Land:** Deutschland\
 **E-Mail:** anna.eschenbacher@icloud.com
 
