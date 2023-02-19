@@ -51,7 +51,6 @@ class BlogRollTemplate extends React.Component {
               <div className="projects__post__titlebox">
                 {/* <Link to={post.fields.slug}> */}
                 <h2 className="projects__post__titlebox__title">
-                  {" "}
                   {index + 1 + ". "}
                   {post.frontmatter.title}
                 </h2>
