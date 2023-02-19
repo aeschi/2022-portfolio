@@ -51,10 +51,27 @@ collections:
           - { label: Description, name: description, widget: string }
 
       - file: "src/pages/about/index.md"
-        label: "About"
-        name: "about"
+        label: "imprint"
+        name: "imprint"
         fields:
-          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page" }
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "imprint-page",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - file: "src/pages/imprint/index.md"
+        label: "imprint"
+        name: "imprint"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "imprint-page",
+            }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
       - file: "src/pages/products/index.md"
