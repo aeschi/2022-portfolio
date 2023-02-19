@@ -100,6 +100,16 @@ export default function BlogRoll() {
                       gatsbyImageData(width: 250, height: 250, quality: 100, layout: CONSTRAINED)
                     }
                   }
+                  featuredimage2 {
+                    childImageSharp {
+                      gatsbyImageData(width: 250, height: 250, quality: 100, layout: CONSTRAINED)
+                    }
+                  }
+                  featuredimage3 {
+                    childImageSharp {
+                      gatsbyImageData(width: 250, height: 250, quality: 100, layout: CONSTRAINED)
+                    }
+                  }
                 }
               }
             }
