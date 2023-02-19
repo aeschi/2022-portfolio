@@ -3,7 +3,7 @@ templateKey: about-page
 path: /about
 title: Datenschutzerklärung + Impressum
 ---
-Allgemeine Hinweise
+**Allgemeine Hinweise**
 
 Diese Datenschutzerklärung enthält ausführliche Informationen darüber, was mit Ihren persönlichen Daten passiert, wenn Sie unsere Website annaeschenbacher.com besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie sich persönlich identifizieren können. Wir halten uns bei der Verarbeitung Ihrer Daten streng an die gesetzlichen Bestimmungen, insbesondere die Datenschutzgrundverordnung („DSGVO“), und legen großen Wert darauf, dass Ihr Besuch auf unserer Website absolut sicher ist.
 
