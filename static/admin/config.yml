@@ -25,8 +25,8 @@ collections:
       - { label: "Description", name: "description", widget: "text" }
       - { label: "Featured Post", name: "featuredpost", widget: "boolean" }
       - { label: "Featured Image", name: "featuredimage", widget: image }
-      - { label: "Featured Image 2", name: "featuredimage2", widget: image }
-      - { label: "Featured Image 3", name: "featuredimage3", widget: image }
+      - { label: "Featured Image 2", name: "featuredimage2", widget: image, required: false }
+      - { label: "Featured Image 3", name: "featuredimage3", widget: image, required: false }
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Tags", name: "tags", widget: "list" }
 
