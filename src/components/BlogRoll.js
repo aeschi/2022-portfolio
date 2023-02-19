@@ -12,6 +12,8 @@ class BlogRollTemplate extends React.Component {
 
     const PostContent = HTMLContent || Content;
 
+    console.log(posts);
+
     return (
       <div>
         {posts &&
