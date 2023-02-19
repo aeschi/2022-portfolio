@@ -10,7 +10,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
 
   return (
     <div className="imprint">
-      {title}
+      <h2>{title}</h2>
       <PageContent className="imprint__content" content={content} />
     </div>
   );
