@@ -6,13 +6,17 @@ import PreviewCompatibleImage from "./PreviewCompatibleImage";
 import Content, { HTMLContent } from "../components/Content";
 
 class BlogRollTemplate extends React.Component {
+  state = {
+    primaryColors: ["#C05756", "#6D74C2", "#87629D"],
+  };
+
   render() {
     const { data } = this.props;
     const { edges: posts } = data.allMarkdownRemark;
 
     const PostContent = HTMLContent || Content;
 
-    console.log(posts);
+    // console.log();
 
     return (
       <div>
@@ -48,7 +52,10 @@ class BlogRollTemplate extends React.Component {
                   </div>
                 ) : null}
               </div>
-              <div className="projects__post__titlebox">
+              <div
+                className="projects__post__titlebox"
+                style={{ backgroundColor: this.state.primaryColors[index % 3] }}
+              >
                 {/* <Link to={post.fields.slug}> */}
                 <h2 className="projects__post__titlebox__title">
                   {index + 1 + ". "}
