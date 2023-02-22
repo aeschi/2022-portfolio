@@ -8,6 +8,7 @@ import Content, { HTMLContent } from "../components/Content";
 class BlogRollTemplate extends React.Component {
   state = {
     primaryColors: ["#C05756", "#6D74C2", "#87629D"],
+    primaryColorsTwo: ["#448954", "#4371A8E2", "#E9A040", "#E25D2D"],
   };
 
   render() {
@@ -54,7 +55,7 @@ class BlogRollTemplate extends React.Component {
               </div>
               <div
                 className="projects__post__titlebox"
-                style={{ backgroundColor: this.state.primaryColors[index % 3] }}
+                style={{ backgroundColor: this.state.primaryColorsTwo[index % 4] }}
               >
                 {/* <Link to={post.fields.slug}> */}
                 <h2 className="projects__post__titlebox__title">
