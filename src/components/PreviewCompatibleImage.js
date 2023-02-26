@@ -3,19 +3,30 @@ import PropTypes from "prop-types";
 import { GatsbyImage } from "gatsby-plugin-image";
 
 const PreviewCompatibleImage = ({ imageInfo }) => {
-  const imageStyle = { borderRadius: "5px" };
-
-  const { alt = "", childImageSharp, image } = imageInfo;
+  const imageStyle = { borderRadius: "3px" };
+  const { alt = "", childImageSharp, image, title } = imageInfo;
 
   if (!!image && !!image.childImageSharp) {
     return (
-      <GatsbyImage image={image.childImageSharp.gatsbyImageData} style={imageStyle} alt={alt} />
+      <GatsbyImage
+        image={image.childImageSharp.gatsbyImageData}
+        style={imageStyle}
+        alt={alt}
+        title={title}
+      />
     );
   } else if (!!childImageSharp) {
-    return <GatsbyImage image={childImageSharp.gatsbyImageData} style={imageStyle} alt={alt} />;
+    return (
+      <GatsbyImage
+        image={childImageSharp.gatsbyImageData}
+        style={imageStyle}
+        alt={alt}
+        title={title}
+      />
+    );
     // for Netlify CMS
   } else if (image) {
-    return <img style={{ imageStyle }} src={image} alt={alt} />;
+    return <img style={{ imageStyle }} src={image} alt={alt} title={title} />;
   } else {
     return null;
   }
@@ -27,6 +38,7 @@ PreviewCompatibleImage.propTypes = {
     childImageSharp: PropTypes.object,
     image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]).isRequired,
     style: PropTypes.object,
+    title: PropTypes.string,
   }).isRequired,
 };
 

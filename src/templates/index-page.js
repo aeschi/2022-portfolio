@@ -5,6 +5,7 @@ import Layout from "../components/Layout";
 import Footer from "../components/Footer";
 import BlogRoll from "../components/BlogRoll";
 import IndexRoll from "../components/IndexRoll";
+import { Link } from "gatsby";
 
 export const IndexPageTemplate = ({ mainpitch, description }) => {
   return (
@@ -18,7 +19,12 @@ export const IndexPageTemplate = ({ mainpitch, description }) => {
         </div>
         <div className="intro__description">
           <h3 className="intro__description__main">{mainpitch.description}</h3>
-          <p className="intro__description__extra">{description}</p>
+          <div className="intro__description__extra">
+            <p>{description}</p>
+            <Link className="intro__description__extra__imprint" to={`/about`}>
+              Impr./Dat. © 2023 Anna Eschenbacher
+            </Link>
+          </div>
         </div>
 
         <Footer />

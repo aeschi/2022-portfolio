@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 // import { kebabCase } from "lodash";
-import { Link, graphql, StaticQuery } from "gatsby";
+import { graphql, StaticQuery } from "gatsby";
 import PreviewCompatibleImage from "./PreviewCompatibleImage";
 // import Content, { HTMLContent } from "../components/Content";
 
@@ -28,6 +28,7 @@ class BlogRollTemplate extends React.Component {
                       alt: `featured image thumbnail for post ${post.frontmatter.title}`,
                       width: post.frontmatter.featuredimage.childImageSharp.gatsbyImageData.width,
                       height: post.frontmatter.featuredimage.childImageSharp.gatsbyImageData.height,
+                      title: `project image for ${post.frontmatter.title}`,
                     }}
                   />
                 ) : null}

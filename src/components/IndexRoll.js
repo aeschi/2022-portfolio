@@ -17,8 +17,9 @@ class IndexRollTemplate extends React.Component {
               <button
                 className="intro__index__button"
                 onClick={() => scrollTo("#Scroll" + post.id)}
+                title="go to project"
               >
-                <h2>
+                <h2 className="intro__index__button_h2">
                   {index + 1 + ". "}
                   {post.frontmatter.title}
                 </h2>
@@ -30,7 +31,12 @@ class IndexRollTemplate extends React.Component {
           className="intro__index__scrollButton"
           onClick={() => scrollTo("#Scroll" + posts[0].node.id)}
         >
-          <img className="intro__index__scrollButton_img" src={upArrow} alt="scroll to the top" />
+          <img
+            className="intro__index__scrollButton_img"
+            src={upArrow}
+            alt="scroll to the top"
+            title="scroll to top"
+          />
         </button>
       </div>
     );
