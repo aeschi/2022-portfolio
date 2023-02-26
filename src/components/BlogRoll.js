@@ -1,22 +1,21 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { kebabCase } from "lodash";
+// import { kebabCase } from "lodash";
 import { Link, graphql, StaticQuery } from "gatsby";
 import PreviewCompatibleImage from "./PreviewCompatibleImage";
-import Content, { HTMLContent } from "../components/Content";
+// import Content, { HTMLContent } from "../components/Content";
 
 class BlogRollTemplate extends React.Component {
   state = {
     primaryColors: ["#C05756", "#6D74C2", "#87629D"],
-    primaryColorsTwo: ["#448954", "#4371A8E2", "#E9A040", "#E25D2D"],
+    primaryColorsTwo: ["#4371A8E2", "#E9A040", "#E25D2D", "#448954"],
   };
 
   render() {
     const { data } = this.props;
     const { edges: posts } = data.allMarkdownRemark;
 
-    const PostContent = HTMLContent || Content;
-
+    // const PostContent = HTMLContent || Content;
     // console.log();
 
     return (

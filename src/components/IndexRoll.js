@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Link, graphql, StaticQuery } from "gatsby";
+import { graphql, StaticQuery } from "gatsby";
+// import scrollTo from "gatsby-plugin-smoothscroll";
 
 class IndexRollTemplate extends React.Component {
   render() {
@@ -12,12 +13,12 @@ class IndexRollTemplate extends React.Component {
         {posts &&
           posts.map(({ node: post }, index) => (
             <div key={post.id}>
-              {/* <Link className="title" to={post.fields.slug}> */}
-              <h2>
-                {index + 1 + ". "}
-                {post.frontmatter.title}
-              </h2>
-              {/* </Link> */}
+              <button onClick={console.log("hi " + index)}>
+                <h2>
+                  {index + 1 + ". "}
+                  {post.frontmatter.title}
+                </h2>
+              </button>
             </div>
           ))}
       </div>
