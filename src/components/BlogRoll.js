@@ -15,14 +15,11 @@ class BlogRollTemplate extends React.Component {
     const { data } = this.props;
     const { edges: posts } = data.allMarkdownRemark;
 
-    // const PostContent = HTMLContent || Content;
-    // console.log();
-
     return (
       <div>
         {posts &&
           posts.map(({ node: post }, index) => (
-            <div className="projects__post" key={post.id}>
+            <div className="projects__post" key={post.id} id={"Scroll" + post.id}>
               <div className="projects__post__image">
                 {post.frontmatter.featuredimage ? (
                   <PreviewCompatibleImage

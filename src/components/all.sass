@@ -22,6 +22,9 @@ h2,h3
     color: $dark-gray
     font-size: 1.5rem
 
+h2
+    margin: 0.75rem
+
 .container
     background-color: Azure
     display: flex
@@ -29,7 +32,7 @@ h2,h3
     align-items: stretch
     height: 100vh
 
-@media (max-width: 768px)
+@media (max-width: 980px)
 
     .container
         flex-direction: column
@@ -47,6 +50,16 @@ h2,h3
 
     .intro__footer
         border-bottom: 1px solid $dark-gray
+        flex-direction: column
+        justify-content: space-between
+
+    .intro__footer__links
+        margin-bottom: 0.45rem
+
+    .intro__index__scrollButton
+        position: fixed
+        transform: rotate(180deg) translate(0rem,0px)
+        right: 1rem
 
     //---------projects responsive--------
     .projects
