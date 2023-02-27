@@ -2,6 +2,7 @@
 @import ./intro
 @import ./projects
 @import ./footer
+@import ./carousel
 
 body
     margin: 0
@@ -28,6 +29,14 @@ h2,h3
     flex-direction: row
     align-items: stretch
     height: 100vh
+
+@media (max-width: 1150px)
+    .intro__description
+        flex-direction: column
+
+    .intro__description__main
+        border-right: none
+        border-bottom: 1px solid $dark-gray
 
 @media (max-width: 980px)
 

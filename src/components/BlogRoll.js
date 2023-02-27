@@ -15,7 +15,6 @@ class BlogRollTemplate extends React.Component {
     const { data } = this.props;
     const { edges: posts } = data.allMarkdownRemark;
 
-    console.log(posts);
     return (
       <div>
         {posts &&
@@ -26,6 +25,18 @@ class BlogRollTemplate extends React.Component {
                   <PreviewCompatibleImage
                     imageInfo={{
                       image: post.frontmatter.featuredimage,
+                      alt: `featured image thumbnail for post ${post.frontmatter.title}`,
+                      width: post.frontmatter.featuredimage.childImageSharp.gatsbyImageData.width,
+                      height: post.frontmatter.featuredimage.childImageSharp.gatsbyImageData.height,
+                      title: `project image for ${post.frontmatter.title}`,
+                      images: post.frontmatter.featuredImages,
+                    }}
+                  />
+                ) : null}
+                {post.frontmatter.featuredimages ? (
+                  <PreviewCompatibleImage
+                    imageInfo={{
+                      images: post.frontmatter.featuredimages,
                       alt: `featured image thumbnail for post ${post.frontmatter.title}`,
                       width: post.frontmatter.featuredimage.childImageSharp.gatsbyImageData.width,
                       height: post.frontmatter.featuredimage.childImageSharp.gatsbyImageData.height,
@@ -113,6 +124,23 @@ export default function BlogRoll() {
                   featuredimage3 {
                     childImageSharp {
                       gatsbyImageData(width: 250, height: 250, quality: 100, layout: CONSTRAINED)
+                    }
+                  }
+                  featuredImages {
+                    featuredimage {
+                      childImageSharp {
+                        gatsbyImageData(width: 250, height: 250, quality: 100, layout: CONSTRAINED)
+                      }
+                    }
+                    featuredimage2 {
+                      childImageSharp {
+                        gatsbyImageData(width: 250, height: 250, quality: 100, layout: CONSTRAINED)
+                      }
+                    }
+                    featuredimage3 {
+                      childImageSharp {
+                        gatsbyImageData(width: 250, height: 250, quality: 100, layout: CONSTRAINED)
+                      }
                     }
                   }
                 }

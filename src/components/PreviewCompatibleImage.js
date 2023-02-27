@@ -2,13 +2,13 @@ import * as React from "react";
 import PropTypes from "prop-types";
 import { GatsbyImage } from "gatsby-plugin-image";
 import Slider from "react-slick";
-// Import css files
+
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const PreviewCompatibleImage = ({ imageInfo }) => {
   const imageStyle = { borderRadius: "3px" };
-  const { alt = "", childImageSharp, image, title } = imageInfo;
+  const { alt = "", childImageSharp, image, title, images } = imageInfo;
 
   const settings = {
     dots: true,
@@ -18,41 +18,78 @@ const PreviewCompatibleImage = ({ imageInfo }) => {
     slidesToScroll: 1,
   };
 
+  console.log(image);
+
+  // images.map(((img)) => (
+  //   console.log(img);
+  // // ));
+
+  // Object.keys(images).forEach(function (img, index) {
+  //   console.log(img);
+  // });
+  const imgArr = [];
+
+  for (const [key, value] of Object.entries(images)) {
+    imgArr.push(value);
+  }
+
   if (!!image && !!image.childImageSharp) {
     return (
       <>
         <Slider {...settings}>
-          <div>
-            <GatsbyImage
-              image={image.childImageSharp.gatsbyImageData}
-              style={imageStyle}
-              alt={alt}
-              title={title}
-            />
-          </div>
-          <div>
-            <GatsbyImage
-              image={image.childImageSharp.gatsbyImageData}
-              style={imageStyle}
-              alt={alt}
-              title={title}
-            />
-          </div>
+          {imgArr &&
+            imgArr.map((imageElement, index) => (
+              <div key={index}>
+                <GatsbyImage
+                  image={imageElement.childImageSharp.gatsbyImageData}
+                  style={imageStyle}
+                  alt={alt + index}
+                  title={title + index}
+                />
+                {/* {console.log(imageElement.childImageSharp.gatsbyImageData)} */}
+              </div>
+            ))}
         </Slider>
       </>
     );
   } else if (!!childImageSharp) {
     return (
-      <GatsbyImage
-        image={childImageSharp.gatsbyImageData}
-        style={imageStyle}
-        alt={alt}
-        title={title}
-      />
+      <>
+        <Slider {...settings}>
+          {imgArr &&
+            imgArr.map((imageElement, index) => (
+              <div key={index}>
+                <GatsbyImage
+                  image={imageElement.childImageSharp.gatsbyImageData}
+                  style={imageStyle}
+                  alt={alt + index}
+                  title={title + index}
+                />
+                {console.log(imageElement.childImageSharp.gatsbyImageData)}
+              </div>
+            ))}
+        </Slider>
+      </>
     );
     // for Netlify CMS
   } else if (image) {
-    return <img style={{ imageStyle }} src={image} alt={alt} title={title} />;
+    return (
+      <>
+        <Slider {...settings}>
+          {imgArr &&
+            imgArr.map((imageElement, index) => (
+              <div key={index}>
+                <img
+                  src={imageElement}
+                  style={imageStyle}
+                  alt={alt + index}
+                  title={title + index}
+                />
+              </div>
+            ))}
+        </Slider>
+      </>
+    );
   } else {
     return null;
   }
@@ -65,6 +102,7 @@ PreviewCompatibleImage.propTypes = {
     image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]).isRequired,
     style: PropTypes.object,
     title: PropTypes.string,
+    images: PropTypes.object,
   }).isRequired,
 };
 
