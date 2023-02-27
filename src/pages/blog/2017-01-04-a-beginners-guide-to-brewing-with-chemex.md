@@ -12,5 +12,9 @@ featuredimage3: /img/products-grid2.jpg
 tags:
   - brewing
   - chemex
+featuredImages:
+  featuredimage: /img/zukunft_15_alcohol_onlygraphic.jpg
+  featuredimage2: /img/zukunft_14_worms_only-graphic.jpg
+  featuredimage3: /img/zukunft_12_krebs_only_artwork.jpg
 ---
 t﻿est
