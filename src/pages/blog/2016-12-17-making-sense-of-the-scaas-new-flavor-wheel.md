@@ -9,6 +9,10 @@ featuredimage: /img/final_rug.jpeg
 tags:
   - flavor
   - tasting
+featuredImages:
+  featuredimage: /img/r1-04611-0000.jpg
+  featuredimage2: /img/products-grid3.jpg
+  featuredimage3: /img/products-full-width.jpg
 ---
 ![flavor wheel](/img/flavor_wheel.jpg)
 
