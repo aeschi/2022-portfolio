@@ -46,7 +46,6 @@ const PreviewCompatibleImage = ({ imageInfo }) => {
                   alt={alt + index}
                   title={title + index}
                 />
-                {/* {console.log(imageElement.childImageSharp.gatsbyImageData)} */}
               </div>
             ))}
         </Slider>
