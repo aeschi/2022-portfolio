@@ -20,5 +20,9 @@ tags:
   - visulization
   - climatecrisis
   - research
+featuredImages:
+  featuredimage: /img/blog-index.jpg
+  featuredimage2: /img/chemex.jpg
+  featuredimage3: /img/de-composition.png
 ---
 A﻿pparently I have to write in here as well. Is this the Content?
