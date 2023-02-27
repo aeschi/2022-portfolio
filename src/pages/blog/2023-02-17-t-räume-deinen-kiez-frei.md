@@ -13,5 +13,9 @@ featuredpost: true
 featuredimage: /img/preview_1.png
 tags:
   - datavisualization
+featuredImages:
+  featuredimage: /img/preview_1.png
+  featuredimage2: /img/products-grid2.jpg
+  featuredimage3: /img/flavor_wheel.jpg
 ---
 **h﻿i**
