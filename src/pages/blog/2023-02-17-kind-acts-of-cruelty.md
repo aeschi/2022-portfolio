@@ -14,5 +14,9 @@ featuredimage: /img/microaggressions.png
 tags:
   - installation
   - dataArt
+featuredImages:
+  featuredimage: /img/microaggressions.png
+  featuredimage2: /img/products-grid1.jpg
+  featuredimage3: /img/products-grid2.jpg
 ---
 H﻿i
