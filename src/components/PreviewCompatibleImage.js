@@ -1,19 +1,45 @@
 import * as React from "react";
 import PropTypes from "prop-types";
 import { GatsbyImage } from "gatsby-plugin-image";
+import Slider from "react-slick";
+// Import css files
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const PreviewCompatibleImage = ({ imageInfo }) => {
   const imageStyle = { borderRadius: "3px" };
   const { alt = "", childImageSharp, image, title } = imageInfo;
 
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
+
   if (!!image && !!image.childImageSharp) {
     return (
-      <GatsbyImage
-        image={image.childImageSharp.gatsbyImageData}
-        style={imageStyle}
-        alt={alt}
-        title={title}
-      />
+      <>
+        <Slider {...settings}>
+          <div>
+            <GatsbyImage
+              image={image.childImageSharp.gatsbyImageData}
+              style={imageStyle}
+              alt={alt}
+              title={title}
+            />
+          </div>
+          <div>
+            <GatsbyImage
+              image={image.childImageSharp.gatsbyImageData}
+              style={imageStyle}
+              alt={alt}
+              title={title}
+            />
+          </div>
+        </Slider>
+      </>
     );
   } else if (!!childImageSharp) {
     return (

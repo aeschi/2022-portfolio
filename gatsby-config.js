@@ -88,5 +88,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-smoothscroll`,
+    "react-slick",
+    "slick-carousel",
   ],
 };
