@@ -3,9 +3,8 @@ import PropTypes from "prop-types";
 import { GatsbyImage } from "gatsby-plugin-image";
 import Slider from "react-slick";
 
-// import "slick-carousel/slick/slick.css";
-import "./carousel.sass";
-// import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const PreviewCompatibleImage = ({ imageInfo }) => {
   const imageStyle = { borderRadius: "3px" };
@@ -18,6 +17,8 @@ const PreviewCompatibleImage = ({ imageInfo }) => {
     slidesToShow: 1,
     slidesToScroll: 1,
   };
+
+  console.log(image);
 
   // images.map(((img)) => (
   //   console.log(img);
