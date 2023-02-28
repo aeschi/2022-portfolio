@@ -17,9 +17,10 @@ description: >-
 featuredpost: true
 featuredimage: /img/de-composition.png
 tags:
-  - visulization
-  - climatecrisis
+  - datavis
   - research
+  - web development
+  - science communication
 featuredImages:
   featuredimage: /img/de-composition.png
   featuredimage2: /img/zeitungsartikel.jpeg
