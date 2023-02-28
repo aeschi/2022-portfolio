@@ -16,7 +16,6 @@ class BlogRollTemplate extends React.Component {
     const { edges: posts } = data.allMarkdownRemark;
 
     const PostContent = HTMLContent || Content;
-    console.log(posts);
 
     return (
       <div>
@@ -43,7 +42,7 @@ class BlogRollTemplate extends React.Component {
               <div className="projects__post__description">
                 {/* <p className="projects__post__description__text">{post.frontmatter.description}</p> */}
 
-                <PostContent content={post.html} />
+                <PostContent content={post.html} className={"projects__post__description__text"} />
 
                 {post.frontmatter.tags && post.frontmatter.tags.length ? (
                   <div className="projects__post__tags">
