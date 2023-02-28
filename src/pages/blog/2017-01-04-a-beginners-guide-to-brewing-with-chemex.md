@@ -2,19 +2,20 @@
 templateKey: blog-post
 title: Die gute Nachricht
 date: 2023-02-01T15:04:10.000Z
-description: Brewing with a Chemex probably seems like a complicated,
-  time-consuming ordeal, but once you get used to the process, it becomes a
-  soothing ritual that's worth the effort every time.
+description: "Together with Johanna Hartmann and Francesca Morini, we design one
+  data visualization per week for the German newspaper taz in the section
+  Zukunft (future). Each graphic presents the weekly good news concerning a wide
+  range of topics such as climate protection and health improvements. "
 featuredpost: false
 featuredimage: /img/chemex.jpg
 featuredimage2: /img/blog-index.jpg
 featuredimage3: /img/products-grid2.jpg
 tags:
-  - brewing
-  - chemex
+  - datavis
+  - science communication
 featuredImages:
-  featuredimage: /img/zukunft_15_alcohol_onlygraphic.jpg
+  featuredimage: /img/07_01_23_hp_zukunft_01_ffm_9.jpg
   featuredimage2: /img/zukunft_14_worms_only-graphic.jpg
   featuredimage3: /img/zukunft_12_krebs_only_artwork.jpg
 ---
-t﻿est
+Together with Johanna Hartmann and Francesca Morini, we design one data visualization per week for the German newspaper taz in the section Zukunft (future). Each graphic presents the weekly good news concerning a wide range of topics such as climate protection and health improvements.
