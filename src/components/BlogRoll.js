@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 // import { kebabCase } from "lodash";
 import { graphql, StaticQuery } from "gatsby";
 import PreviewCompatibleImage from "./PreviewCompatibleImage";
-// import Content, { HTMLContent } from "../components/Content";
+import Content, { HTMLContent } from "../components/Content";
 
 class BlogRollTemplate extends React.Component {
   state = {
@@ -33,17 +33,6 @@ class BlogRollTemplate extends React.Component {
                       height: post.frontmatter.featuredimage.childImageSharp.gatsbyImageData.height,
                       title: `project image for ${post.frontmatter.title}`,
                       images: post.frontmatter.featuredImages,
-                    }}
-                  />
-                ) : null}
-                {post.frontmatter.featuredimages ? (
-                  <PreviewCompatibleImage
-                    imageInfo={{
-                      images: post.frontmatter.featuredimages,
-                      alt: `featured image thumbnail for post ${post.frontmatter.title}`,
-                      width: post.frontmatter.featuredimage.childImageSharp.gatsbyImageData.width,
-                      height: post.frontmatter.featuredimage.childImageSharp.gatsbyImageData.height,
-                      title: `project image for ${post.frontmatter.title}`,
                     }}
                   />
                 ) : null}
