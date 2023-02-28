@@ -41,7 +41,7 @@ class BlogRollTemplate extends React.Component {
                 ) : null}
               </div>
               <div className="projects__post__description">
-                <p className="projects__post__description__text">{post.frontmatter.description}</p>
+                {/* <p className="projects__post__description__text">{post.frontmatter.description}</p> */}
 
                 <PostContent content={post.html} />
 
@@ -107,16 +107,6 @@ export default function BlogRoll() {
                   date(formatString: "MMMM DD, YYYY")
                   featuredpost
                   featuredimage {
-                    childImageSharp {
-                      gatsbyImageData(width: 250, height: 250, quality: 100, layout: CONSTRAINED)
-                    }
-                  }
-                  featuredimage2 {
-                    childImageSharp {
-                      gatsbyImageData(width: 250, height: 250, quality: 100, layout: CONSTRAINED)
-                    }
-                  }
-                  featuredimage3 {
                     childImageSharp {
                       gatsbyImageData(width: 250, height: 250, quality: 100, layout: CONSTRAINED)
                     }
