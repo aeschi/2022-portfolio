@@ -20,7 +20,7 @@ class BlogRollTemplate extends React.Component {
         {posts &&
           posts.map(({ node: post }, index) => (
             <div className="projects__post" key={post.id} id={"Scroll" + post.id}>
-              <div className="projects__post__image">
+              <div className="projects__post__imgcontainer">
                 {post.frontmatter.featuredimage ? (
                   <PreviewCompatibleImage
                     imageInfo={{
@@ -129,17 +129,17 @@ export default function BlogRoll() {
                   featuredImages {
                     featuredimage {
                       childImageSharp {
-                        gatsbyImageData(width: 250, height: 250, quality: 100, layout: CONSTRAINED)
+                        gatsbyImageData(width: 500, height: 500, quality: 100, layout: CONSTRAINED)
                       }
                     }
                     featuredimage2 {
                       childImageSharp {
-                        gatsbyImageData(width: 250, height: 250, quality: 100, layout: CONSTRAINED)
+                        gatsbyImageData(width: 500, height: 500, quality: 100, layout: CONSTRAINED)
                       }
                     }
                     featuredimage3 {
                       childImageSharp {
-                        gatsbyImageData(width: 250, height: 250, quality: 100, layout: CONSTRAINED)
+                        gatsbyImageData(width: 500, height: 500, quality: 100, layout: CONSTRAINED)
                       }
                     }
                   }

@@ -3,8 +3,7 @@ import PropTypes from "prop-types";
 import { GatsbyImage } from "gatsby-plugin-image";
 import Slider from "react-slick";
 
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import "./carousel.sass";
 
 const PreviewCompatibleImage = ({ imageInfo }) => {
   const imageStyle = { borderRadius: "3px" };
@@ -18,15 +17,6 @@ const PreviewCompatibleImage = ({ imageInfo }) => {
     slidesToScroll: 1,
   };
 
-  console.log(image);
-
-  // images.map(((img)) => (
-  //   console.log(img);
-  // // ));
-
-  // Object.keys(images).forEach(function (img, index) {
-  //   console.log(img);
-  // });
   const imgArr = [];
 
   for (const [key, value] of Object.entries(images)) {
@@ -41,12 +31,12 @@ const PreviewCompatibleImage = ({ imageInfo }) => {
             imgArr.map((imageElement, index) => (
               <div key={index}>
                 <GatsbyImage
+                  className="projects__post__imgcontainer__img"
                   image={imageElement.childImageSharp.gatsbyImageData}
                   style={imageStyle}
                   alt={alt + index}
                   title={title + index}
                 />
-                {/* {console.log(imageElement.childImageSharp.gatsbyImageData)} */}
               </div>
             ))}
         </Slider>
@@ -65,7 +55,6 @@ const PreviewCompatibleImage = ({ imageInfo }) => {
                   alt={alt + index}
                   title={title + index}
                 />
-                {console.log(imageElement.childImageSharp.gatsbyImageData)}
               </div>
             ))}
         </Slider>
