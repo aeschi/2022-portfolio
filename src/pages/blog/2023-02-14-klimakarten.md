@@ -21,8 +21,8 @@ tags:
   - climatecrisis
   - research
 featuredImages:
-  featuredimage: /img/blog-index.jpg
-  featuredimage2: /img/chemex.jpg
-  featuredimage3: /img/de-composition.png
+  featuredimage: /img/de-composition.png
+  featuredimage2: /img/zeitungsartikel.jpeg
+  featuredimage3: /img/apc_1099.jpg
 ---
 A﻿pparently I have to write in here as well. Is this the Content?
