@@ -2,11 +2,10 @@ import * as React from "react";
 import PropTypes from "prop-types";
 import { GatsbyImage } from "gatsby-plugin-image";
 import Slider from "react-slick";
-
 import "./carousel.sass";
 
 const PreviewCompatibleImage = ({ imageInfo }) => {
-  const imageStyle = { borderRadius: "3px" };
+  const imageStyle = { borderRadius: "0px" };
   const { alt = "", childImageSharp, image, title, images } = imageInfo;
 
   const settings = {

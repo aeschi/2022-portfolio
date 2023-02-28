@@ -20,7 +20,10 @@ class BlogRollTemplate extends React.Component {
         {posts &&
           posts.map(({ node: post }, index) => (
             <div className="projects__post" key={post.id} id={"Scroll" + post.id}>
-              <div className="projects__post__imgcontainer">
+              <div
+                className="projects__post__imgcontainer"
+                style={{ color: this.state.primaryColorsTwo[index % 4] }}
+              >
                 {post.frontmatter.featuredimage ? (
                   <PreviewCompatibleImage
                     imageInfo={{
