@@ -4,9 +4,7 @@ subheading: Subheading
 templateKey: index-page
 mainpitch:
   title: Anna Eschenbacher
-  description: |-
-    Description Main Pitch 
-    Data visualization designer & creative technologist based in Berlin.
+  description: Data visualization designer & creative technologist based in Berlin.
 intro:
   blurbs:
     - image: /img/meeting-space.png
@@ -32,8 +30,8 @@ main:
     alt: IMAGE 3
     image: /img/chemex.jpg
 image: /img/r1-04611-0000.jpg
-description: Description - Data visualization designer & creative technologist
-  based in Berlin. I study Creative Technologies at Film University Babelsberg
-  Konrad Wolf. Prior to that, I graduated with a Bachelor of Engineering in
-  Audiovisual Media at Stuttgart Media University.
+description: "I study Creative Technologies at Film University Babelsberg Konrad
+  Wolf. Prior to that, I graduated with a Bachelor of Engineering in Audiovisual
+  Media at Stuttgart Media University. I work, research and teach in the area of
+  creative technologies, data visualization design and developement. "
 ---
