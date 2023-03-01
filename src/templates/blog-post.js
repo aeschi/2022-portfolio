@@ -4,6 +4,7 @@ import { kebabCase } from "lodash";
 import { Helmet } from "react-helmet";
 import { graphql, Link } from "gatsby";
 import Layout from "../components/Layout";
+import PreviewCompatibleImage from "./PreviewCompatibleImage";
 import Content, { HTMLContent } from "../components/Content";
 
 // eslint-disable-next-line
@@ -14,11 +15,26 @@ export const BlogPostTemplate = ({
   tags,
   title,
   helmet,
+  images,
 }) => {
   const PostContent = contentComponent || Content;
 
   return (
     <div className="projects__post--template">
+      <div className="projects__post__imgcontainer" style={{ color: "#E25D2D" }}>
+        {images.featuredimage ? (
+          <PreviewCompatibleImage
+            imageInfo={{
+              image: images.featuredimage,
+              alt: `featured image thumbnail for post ${post.frontmatter.title}`,
+              width: images.featuredimage.childImageSharp.gatsbyImageData.width,
+              height: images.featuredimage.childImageSharp.gatsbyImageData.height,
+              title: `project image for ${post.frontmatter.title}`,
+              images: images,
+            }}
+          />
+        ) : null}
+      </div>
       <div className="projects__post__description">
         <p>{description}</p>
         <PostContent content={content} className={"projects__post__description__text"} />
@@ -64,6 +80,7 @@ const BlogPost = ({ data }) => {
         }
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
+        images={post.frontmatter.featuredImages}
       />
     </Layout>
   );
@@ -86,6 +103,23 @@ export const pageQuery = graphql`
         title
         description
         tags
+        featuredImages {
+          featuredimage {
+            childImageSharp {
+              gatsbyImageData(width: 500, height: 500, quality: 100, layout: CONSTRAINED)
+            }
+          }
+          featuredimage2 {
+            childImageSharp {
+              gatsbyImageData(width: 500, height: 500, quality: 100, layout: CONSTRAINED)
+            }
+          }
+          featuredimage3 {
+            childImageSharp {
+              gatsbyImageData(width: 500, height: 500, quality: 100, layout: CONSTRAINED)
+            }
+          }
+        }
       }
     }
   }
