@@ -26,10 +26,10 @@ export const BlogPostTemplate = ({
           <PreviewCompatibleImage
             imageInfo={{
               image: images.featuredimage,
-              alt: `featured image thumbnail for post ${title}`,
+              alt: `featured image thumbnail for post`,
               width: images.featuredimage.childImageSharp.gatsbyImageData.width,
               height: images.featuredimage.childImageSharp.gatsbyImageData.height,
-              title: `project image for ${title}`,
+              title: `project image `,
               images: images,
             }}
           />
