@@ -26,16 +26,16 @@ class BlogRollTemplate extends React.Component {
                 className="projects__post__imgcontainer"
                 style={{ color: this.state.primaryColorsTwo[index % 4] }}
               >
-                {post.frontmatter.featuredImages.featuredimage ? (
+                {post.frontmatter.featuredImages.featuredimage1 ? (
                   <PreviewCompatibleImage
                     imageInfo={{
-                      image: post.frontmatter.featuredImages.featuredimage,
+                      image: post.frontmatter.featuredImages.featuredimage1,
                       alt: `featured image thumbnail for post ${post.frontmatter.title}`,
                       width:
-                        post.frontmatter.featuredImages.featuredimage.childImageSharp
+                        post.frontmatter.featuredImages.featuredimage1.childImageSharp
                           .gatsbyImageData.width,
                       height:
-                        post.frontmatter.featuredImages.featuredimage.childImageSharp
+                        post.frontmatter.featuredImages.featuredimage1.childImageSharp
                           .gatsbyImageData.height,
                       title: `project image for ${post.frontmatter.title}`,
                       images: post.frontmatter.featuredImages,
@@ -110,7 +110,7 @@ export default function BlogRoll() {
                   date(formatString: "MMMM DD, YYYY")
                   featuredpost
                   featuredImages {
-                    featuredimage {
+                    featuredimage1 {
                       childImageSharp {
                         gatsbyImageData(width: 500, height: 500, quality: 100, layout: CONSTRAINED)
                       }
