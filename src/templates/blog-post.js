@@ -4,7 +4,7 @@ import { kebabCase } from "lodash";
 import { Helmet } from "react-helmet";
 import { graphql, Link } from "gatsby";
 import Layout from "../components/Layout";
-import PreviewCompatibleImage from "./PreviewCompatibleImage";
+import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
 import Content, { HTMLContent } from "../components/Content";
 
 // eslint-disable-next-line
@@ -36,7 +36,7 @@ export const BlogPostTemplate = ({
         ) : null}
       </div>
       <div className="projects__post__description">
-        <p>{description}</p>
+        {/* <p>{description}</p> */}
         <PostContent content={content} className={"projects__post__description__text"} />
         {tags && tags.length ? (
           <div className="projects__post__tags">
