@@ -18,7 +18,7 @@ export const BlogPostTemplate = ({
   const PostContent = contentComponent || Content;
 
   return (
-    <div className="projects__post">
+    <div className="projects__post--template">
       <div className="projects__post__description">
         <p>{description}</p>
         <PostContent content={content} className={"projects__post__description__text"} />
