@@ -1,10 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { kebabCase } from "lodash";
+// import { kebabCase } from "lodash";
 import { Helmet } from "react-helmet";
 import { graphql, Link } from "gatsby";
 import Layout from "../components/Layout";
-import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
+// import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
 import Content, { HTMLContent } from "../components/Content";
 
 // eslint-disable-next-line
@@ -21,7 +21,7 @@ export const BlogPostTemplate = ({
 
   return (
     <div className="projects__post--template">
-      <div className="projects__post__imgcontainer" style={{ color: "#E25D2D" }}>
+      {/* <div className="projects__post__imgcontainer" style={{ color: "#E25D2D" }}>
         {images.featuredimage ? (
           <PreviewCompatibleImage
             imageInfo={{
@@ -34,7 +34,7 @@ export const BlogPostTemplate = ({
             }}
           />
         ) : null}
-      </div>
+      </div> */}
       <div className="projects__post__description">
         {/* <p>{description}</p> */}
         <PostContent content={content} className={"projects__post__description__text"} />
