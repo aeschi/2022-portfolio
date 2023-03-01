@@ -18,30 +18,24 @@ export const BlogPostTemplate = ({
   const PostContent = contentComponent || Content;
 
   return (
-    <section className="section">
-      {helmet || ""}
-      <div className="container content">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <h1 className="title is-size-2 has-text-weight-bold is-bold-light">{title}</h1>
-            <p>{description}</p>
-            <PostContent content={content} />
-            {tags && tags.length ? (
-              <div style={{ marginTop: `4rem` }}>
-                <h4>Tags</h4>
-                <ul className="taglist">
-                  {tags.map((tag) => (
-                    <li key={tag + `tag`}>
-                      <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ) : null}
+    <div className="projects__post">
+      <div className="projects__post__description">
+        <p>{description}</p>
+        <PostContent content={content} className={"projects__post__description__text"} />
+        {tags && tags.length ? (
+          <div className="projects__post__tags">
+            {tags.map((tag) => (
+              <p className="projects__post__tags__element" key={tag + `tag`}>
+                {tag}
+              </p>
+            ))}
           </div>
-        </div>
+        ) : null}
       </div>
-    </section>
+      <div className="projects__post__titlebox" style={{ backgroundColor: "#E25D2D" }}>
+        <h2 className="projects__post__titlebox__title">{title}</h2>
+      </div>
+    </div>
   );
 };
 
