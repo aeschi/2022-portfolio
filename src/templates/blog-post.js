@@ -20,7 +20,7 @@ export const BlogPostTemplate = ({
   const PostContent = contentComponent || Content;
 
   return (
-    <div className="projects__post--template">
+    <div className="projects__post">
       {/* <div className="projects__post__imgcontainer" style={{ color: "#E25D2D" }}>
         {images.featuredimage ? (
           <PreviewCompatibleImage
