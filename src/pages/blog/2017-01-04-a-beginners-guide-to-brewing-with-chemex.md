@@ -4,7 +4,7 @@ title: Die gute Nachricht
 date: 2023-02-01T15:04:10.000Z
 description: ""
 featuredpost: true
-featuredimage: /img/chemex.jpg
+featuredimage: ""
 featuredimage2: ""
 featuredimage3: ""
 tags:
