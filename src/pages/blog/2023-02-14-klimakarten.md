@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: Klimakarten
-date: 2022-12-03T14:21:59.396Z
+date: 2022-12-04T14:21:59.396Z
 description: ""
 featuredpost: true
 featuredimage: ""
@@ -20,4 +20,4 @@ For each of the 401 districts and 16 states in Germany, the reader can explore c
 \
 T﻿he published article  can be found on [taz.de/klimakarten ↗](https://taz.de/klimakarten). Further information [on the research ↗](https://uclab.fh-potsdam.de/projects/klimakarten/).\
 \
-*This work was in collaboration with Francesca Morini, Johanna Hartmann, Marian Dörk and the taz journalists Luise Strothmann, Lalon Sander, Jean-Philipp Baeck, Jelene Malkowski*
+This work was in collaboration with Francesca Morini, Johanna Hartmann, Marian Dörk and the taz journalists Luise Strothmann, Lalon Sander, Jean-Philipp Baeck, Jelene Malkowski
