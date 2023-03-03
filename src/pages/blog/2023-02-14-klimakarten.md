@@ -11,9 +11,9 @@ tags:
   - web development
   - science communication
 featuredImages:
-  featuredimage: /img/taz-klimakarten-img-1.jpg
+  featuredimage: /img/taz-klimakarten-img-3.jpg
   featuredimage2: /img/taz-klimakarten-img-2.jpg
-  featuredimage3: /img/taz-klimakarten-img-3.jpg
+  featuredimage3: /img/taz-klimakarten-img-1.jpg
 ---
 In collaboration with the newspaper taz , we designed and produced both physical and digital postcards containing visualizations covering various aspects of climate protection and mitigation in Germany.\
 \
