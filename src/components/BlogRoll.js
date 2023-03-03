@@ -112,17 +112,17 @@ export default function BlogRoll() {
                   featuredImages {
                     featuredimage {
                       childImageSharp {
-                        gatsbyImageData(width: 500, height: 500, quality: 100, layout: CONSTRAINED)
+                        gatsbyImageData(width: 650, height: 650, quality: 100, layout: CONSTRAINED)
                       }
                     }
                     featuredimage2 {
                       childImageSharp {
-                        gatsbyImageData(width: 500, height: 500, quality: 100, layout: CONSTRAINED)
+                        gatsbyImageData(width: 650, height: 650, quality: 100, layout: CONSTRAINED)
                       }
                     }
                     featuredimage3 {
                       childImageSharp {
-                        gatsbyImageData(width: 500, height: 500, quality: 100, layout: CONSTRAINED)
+                        gatsbyImageData(width: 650, height: 650, quality: 100, layout: CONSTRAINED)
                       }
                     }
                   }

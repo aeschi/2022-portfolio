@@ -5,6 +5,25 @@ import scrollTo from "gatsby-plugin-smoothscroll";
 import upArrow from "../img/up_arrow.svg";
 
 class IndexRollTemplate extends React.Component {
+  // constructor(props) {
+  //   super(props);
+  //   this.updateDimensions = this.updateDimensions.bind(this);
+  //   this.state = { heightSet: 0 };
+  // }
+
+  // componentDidMount() {
+  //   this.updateDimensions();
+  //   window.addEventListener("resize", this.updateDimensions);
+  // }
+
+  // componentWillUnmount() {
+  //   window.removeEventListener("resize", this.updateDimensions);
+  // }
+
+  // updateDimensions() {
+  //   this.setState({ heightSet: document.body.scrollHeight });
+  // }
+
   render() {
     const { data } = this.props;
     const { edges: posts } = data.allMarkdownRemark;
@@ -28,7 +47,7 @@ class IndexRollTemplate extends React.Component {
           ))}
 
         <button
-          className="intro__index__scrollButton"
+          className="intro__index__scrollButton--desktop"
           onClick={() => scrollTo("#Scroll" + posts[0].node.id)}
         >
           <img
@@ -38,6 +57,19 @@ class IndexRollTemplate extends React.Component {
             title="scroll to top"
           />
         </button>
+        {/* {this.state.heightSet > 10 && ( */}
+        <button
+          className="intro__index__scrollButton--mobile"
+          onClick={() => scrollTo("#titlePage")}
+        >
+          <img
+            className="intro__index__scrollButton_img"
+            src={upArrow}
+            alt="scroll to the top"
+            title="scroll to top"
+          />
+        </button>
+        {/* )} */}
       </div>
     );
   }

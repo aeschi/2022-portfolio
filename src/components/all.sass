@@ -23,6 +23,12 @@ h2,h3
     color: $dark-gray
     font-size: 1.5rem
 
+a
+    font-family: PPAgrandir Bold
+    color: $dark-gray
+    // font-weight:
+    text-decoration: none
+
 .container
     background-color: Azure
     display: flex
@@ -55,10 +61,11 @@ h2,h3
     .intro__footer__links
         margin-bottom: 0.45rem
 
-    .intro__index__scrollButton
-        position: fixed
-        transform: rotate(180deg) translate(0rem,0px)
-        right: 1rem
+    .intro__index__scrollButton--desktop
+        visibility: hidden
+
+    .intro__index__scrollButton--mobile
+        visibility: visible
 
     //---------projects responsive--------
     .projects
@@ -70,6 +77,7 @@ h2,h3
         align-self: center
         text-align: center
         margin: 1rem
+        width: 620px
 
     .projects__post__description
         order: 2
@@ -87,6 +95,6 @@ h2,h3
         transform-origin: none
         transform: rotate(0deg) translate(0rem,0px)
 
-@media (max-width: 550px)
+@media (max-width: 650px)
     .projects__post__imgcontainer
         width: 90vw

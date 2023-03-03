@@ -12,7 +12,9 @@ export const IndexPageTemplate = ({ mainpitch, description }) => {
     <div className="container">
       <div className="intro">
         <div className="intro__title">
-          <h1 className="intro__title_header">{mainpitch.title}</h1>
+          <h1 className="intro__title_header" id={"titlePage"}>
+            {mainpitch.title}
+          </h1>
         </div>
         <div className="intro__index">
           <IndexRoll />
@@ -43,6 +45,8 @@ IndexPageTemplate.propTypes = {
 
 const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
+  const scrollHeight = document.body.scrollHeight;
+  console.log(scrollHeight);
 
   return (
     <Layout>
