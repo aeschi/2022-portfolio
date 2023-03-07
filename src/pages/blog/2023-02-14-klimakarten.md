@@ -8,8 +8,8 @@ featuredimage: ""
 tags:
   - datavis
   - research
-  - web development
-  - science communication
+  - web dev.
+  - data journalism
 featuredImages:
   featuredimage: /img/taz-klimakarten-img-3.jpg
   featuredimage2: /img/taz-klimakarten-img-2.jpg
