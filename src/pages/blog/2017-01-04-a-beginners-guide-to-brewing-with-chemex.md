@@ -9,7 +9,7 @@ featuredimage2: ""
 featuredimage3: ""
 tags:
   - datavis
-  - science com.
+  - data journalism
 featuredImages:
   featuredimage: /img/img_7511.jpg
   featuredimage2: /img/taz-zukunft-img-1.jpg
