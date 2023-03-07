@@ -8,6 +8,7 @@ featuredimage: ""
 tags:
   - installation
   - data art
+  - web dev.
 featuredImages:
   featuredimage: /img/microaggressions.png
   featuredimage2: /img/products-grid1.jpg
