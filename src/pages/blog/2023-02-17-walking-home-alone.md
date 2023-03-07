@@ -13,4 +13,4 @@ featuredImages:
   featuredimage2: /img/chemex.jpg
   featuredimage3: /img/og-image.jpg
 ---
-VR Project...
+Der 360° Dokumentarfilms erzählt von den Erfahrungen einer Betroffenen mit sexueller Belästigung. Es geht um Fälle alltäglicher Belästigung, die oft als unangenehme, aber letztlich harmlose Zwischenfälle abgestempelt werden. Erzählt werden diese Geschichten im O-Ton, über Audio-Ausschnitte aus Interviews. Animierte, schemenhafte Visualisierungen zeichnen die Berichte nach. 
