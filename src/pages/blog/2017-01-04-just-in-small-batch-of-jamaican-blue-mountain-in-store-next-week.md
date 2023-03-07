@@ -7,7 +7,7 @@ featuredpost: true
 featuredimage: /img/willyouremember2.png
 tags:
   - datavis
-  - web development
+  - web dev.
 featuredImages:
   featuredimage: /img/screenshot-2023-02-28-at-11.20.38.png
   featuredimage2: /img/screenshot-2023-02-28-at-11.21.42.png
