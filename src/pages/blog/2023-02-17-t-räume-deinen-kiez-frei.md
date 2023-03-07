@@ -6,7 +6,8 @@ description: ""
 featuredpost: true
 featuredimage: /img/preview_1.png
 tags:
-  - datavisualization
+  - datavis
+  - web dev.
 featuredImages:
   featuredimage: /img/preview_1.png
   featuredimage2: /img/products-grid2.jpg
