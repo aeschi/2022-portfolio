@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { graphql, StaticQuery } from "gatsby";
 import scrollTo from "gatsby-plugin-smoothscroll";
-import upArrow from "../img/up_arrow.svg";
+import upArrow from "../img/up_arrow_fat.svg";
 
 class IndexRollTemplate extends React.Component {
   // constructor(props) {
@@ -32,11 +32,11 @@ class IndexRollTemplate extends React.Component {
       <div>
         {posts &&
           posts.map(({ node: post }, index) => (
-            <div key={post.id}>
+            <div className="intro__index__div" key={post.id}>
               <button
                 className="intro__index__button"
                 onClick={() => scrollTo("#Scroll" + post.id)}
-                title="go to project"
+                title="click to jump to project"
               >
                 <h2 className="intro__index__button_h2">
                   {index + 1 + ". "}

@@ -21,6 +21,7 @@ export const IndexPageTemplate = ({ mainpitch, description }) => {
         </div>
         <div className="intro__description">
           <h3 className="intro__description__main">{mainpitch.description}</h3>
+          {/* <div className="intro__index__cursor"></div> */}
           <div className="intro__description__extra">
             <p>{description}</p>
             <Link className="intro__description__extra__imprint" to={`/about`}>

@@ -22,6 +22,7 @@
 .intro__index__button
     background: none
     color: inherit
+    width: 100%
     border: none
     padding: 0
     margin: 0
@@ -29,6 +30,44 @@
     cursor: pointer
     outline: inherit
     display: flex
+
+    &:hover
+
+        background-color: $primary-three
+        .intro__index__button_h2
+            color: $primary-four
+
+.intro__index__cursor
+    width: 50px
+    height: 50px
+    background: linear-gradient(120deg, $primary-one 50%, $primary-four 100%)
+    background-size: 1600% 1600%
+    position: absolute
+    mix-blend-mode: difference
+    pointer-events: none
+    z-index: 3
+    transition: 1
+    animation: blobRadius 5s ease infinite
+
+@keyframes blobRadius
+    0%
+        border-radius: 43% 77% 80% 40% / 40% 40% 80% 80%
+    100%
+        border-radius: 43% 77% 80% 40% / 40% 40% 80% 80%
+    20%
+        border-radius: 47% 73% 60% 59% / 47% 75% 45% 73%
+    40%
+        border-radius: 43% 77% 80% 40% / 47% 75% 45% 73%
+    80%
+        border-radius: 47% 73% 60% 59% / 40% 40% 80% 80%
+
+// @keyframe blobBackground
+//     0%
+//     background-position: 0% 50%
+//     100%
+//     background-position: 0% 50%
+//     50%
+//     background-position: 100% 50%
 
 .intro__index__button_h2
     margin: 0.75rem
@@ -85,10 +124,10 @@
 .intro__description__extra
     background-color: $primary-two
     padding: 0.75rem 1rem 0.5rem 1rem
-    flex: 1
-
+    flex: 1.15
     p
         color: $primary-three
+        line-height: 1.125rem
         margin: 0.5rem 0rem 0.5rem 0rem
 
 .intro__description__extra__imprint
