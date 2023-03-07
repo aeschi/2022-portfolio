@@ -6,7 +6,7 @@ description: ""
 featuredpost: true
 featuredimage: /img/screenshot-2022-02-23-at-11.19.36.png
 tags:
-  - VR
+  - virtual reality
   - documentary
 featuredImages:
   featuredimage: /img/screenshot-2022-02-23-at-11.19.36.png
