@@ -9,7 +9,7 @@ tags:
   - datavis
   - installation
 featuredImages:
-  featuredimage: /img/real-time-war-rug-img-3.jpeg
+  featuredimage: /img/giphytest.gif
   featuredimage2: /img/real-time-war-rug-img-2.png
   featuredimage3: /img/real-time-war-rug-img-5.jpeg
 ---
