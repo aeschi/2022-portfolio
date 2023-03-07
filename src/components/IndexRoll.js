@@ -2,28 +2,9 @@ import React from "react";
 import PropTypes from "prop-types";
 import { graphql, StaticQuery } from "gatsby";
 import scrollTo from "gatsby-plugin-smoothscroll";
-import upArrow from "../img/up_arrow_fat.svg";
+import upArrow from "../img/up_arrow_fat.png";
 
 class IndexRollTemplate extends React.Component {
-  // constructor(props) {
-  //   super(props);
-  //   this.updateDimensions = this.updateDimensions.bind(this);
-  //   this.state = { heightSet: 0 };
-  // }
-
-  // componentDidMount() {
-  //   this.updateDimensions();
-  //   window.addEventListener("resize", this.updateDimensions);
-  // }
-
-  // componentWillUnmount() {
-  //   window.removeEventListener("resize", this.updateDimensions);
-  // }
-
-  // updateDimensions() {
-  //   this.setState({ heightSet: document.body.scrollHeight });
-  // }
-
   render() {
     const { data } = this.props;
     const { edges: posts } = data.allMarkdownRemark;
@@ -42,10 +23,18 @@ class IndexRollTemplate extends React.Component {
                   {index + 1 + ". "}
                   {post.frontmatter.title}
                 </h2>
+                {post.frontmatter.tags && post.frontmatter.tags.length ? (
+                  <div className="intro__index__button__tags">
+                    {post.frontmatter.tags.map((tag) => (
+                      <p className="intro__index__button__tags__element" key={tag + `tag`}>
+                        {tag}
+                      </p>
+                    ))}
+                  </div>
+                ) : null}
               </button>
             </div>
           ))}
-
         <button
           className="intro__index__scrollButton--desktop"
           onClick={() => scrollTo("#Scroll" + posts[0].node.id)}
@@ -57,7 +46,6 @@ class IndexRollTemplate extends React.Component {
             title="scroll to top"
           />
         </button>
-        {/* {this.state.heightSet > 10 && ( */}
         <button
           className="intro__index__scrollButton--mobile"
           onClick={() => scrollTo("#titlePage")}
@@ -100,6 +88,7 @@ export default function IndexRoll() {
                 }
                 frontmatter {
                   title
+                  tags
                   date(formatString: "MMMM DD, YYYY")
                 }
               }
