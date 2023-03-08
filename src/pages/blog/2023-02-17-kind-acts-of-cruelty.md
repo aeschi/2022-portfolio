@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: Kind Acts of Cruelty
-date: 2021-06-24T13:51:21.768Z
+date: 2022-07-01T13:51:21.768Z
 description: ""
 featuredpost: true
 featuredimage: ""
