@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: "[T]räume deinen Kiez frei"
-date: 2022-02-01T17:46:52.481Z
+date: 2018-12-28T17:46:52.481Z
 description: ""
 featuredpost: true
 featuredimage: /img/preview_1.png
