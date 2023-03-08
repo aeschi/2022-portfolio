@@ -6,7 +6,7 @@ description: ""
 featuredpost: true
 featuredimage: ""
 tags:
-  - datavis
+  - data art
   - installation
 featuredImages:
   featuredimage: /img/r1-04611-0019.jpg
