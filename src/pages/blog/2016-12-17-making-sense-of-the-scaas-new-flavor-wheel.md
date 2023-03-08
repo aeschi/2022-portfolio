@@ -9,9 +9,9 @@ tags:
   - datavis
   - installation
 featuredImages:
-  featuredimage: /img/real-time-war-rug-img-3.jpeg
-  featuredimage2: /img/real-time-war-rug-img-2.png
-  featuredimage3: /img/real-time-war-rug-img-5.jpeg
+  featuredimage: /img/real-time-war-rug-img-1_b.jpg
+  featuredimage2: /img/real-time-war-rug-img-4.jpeg
+  featuredimage3: /img/r1-04611-0019.jpg
 ---
 The real-time war rug is a tangible and audiovisual display of the ongoing socio-political conflicts through the medium of war rugs. We would like to use this soft reminder to draw attention to all conflicts happening around us and the interconnected nature of our eco-system.
 The physical realization of the project is a rug made by tufting technique that consists of two layers: a moving and a still one.  The tufted rug depicts the world map, and behind it, there is a layer of motors that is linked to rotatable discs covered with “soft pixels”\
