@@ -38,6 +38,8 @@ collections:
               { label: "FeaturedImage1", name: "featuredimage", widget: image, required: false },
               { label: "FeaturedImage2", name: "featuredimage2", widget: image, required: false },
               { label: "FeaturedImage3", name: "featuredimage3", widget: image, required: false },
+              { label: "FeaturedImage4", name: "featuredimage4", widget: image, required: false },
+              { label: "FeaturedImage5", name: "featuredimage5", widget: image, required: false },
             ],
         }
 
