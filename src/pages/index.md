@@ -4,7 +4,7 @@ subheading: Subheading
 templateKey: index-page
 mainpitch:
   title: Anna Eschenbacher
-  description: Data visualization designer & creative technologist based in Berlin.
+  description: I create interactive installations and custom designed data visualizations.
 intro:
   blurbs:
     - image: /img/meeting-space.png
