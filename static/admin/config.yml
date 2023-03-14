@@ -24,9 +24,6 @@ collections:
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Description", name: "description", widget: "text", required: false }
       - { label: "Featured Post", name: "featuredpost", widget: "boolean", default: "true" }
-      - { label: "Featured Image", name: "featuredimage", widget: image, required: false }
-      - { label: "Featured Image 2", name: "featuredimage2", widget: image, required: false }
-      - { label: "Featured Image 3", name: "featuredimage3", widget: image, required: false }
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Tags", name: "tags", widget: "list" }
       - {
