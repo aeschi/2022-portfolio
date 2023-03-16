@@ -1,18 +1,18 @@
 ---
 templateKey: blog-post
+featuredImages:
+  featuredimage: /img/remnants_i_2.jpeg
+  featuredimage2: /img/remnants_i_1.jpeg
+  featuredimage3: /img/remnants_i_4.jpeg
+featuredimage: ""
 title: Kind Acts of Cruelty
 date: 2021-06-17T13:51:21.768Z
 description: ""
 featuredpost: true
-featuredimage: ""
 tags:
   - installation
   - data art
   - web dev.
-featuredImages:
-  featuredimage: /img/microaggressions.png
-  featuredimage2: /img/products-grid1.jpg
-  featuredimage3: /img/products-grid2.jpg
 ---
 Remnants - Kind Acts of Cruelty was an installation and accompanying website about microaggressions. The visitors were surrounded by a swarm of letters constantly grouping into phrases and bursting into a swarm again. Our main metaphor about microaggressions is that they are like mosquito-bites, one is an inconvenient feeling, but it’s easy to get over it, but as they happen more and more often, and the quantity and the frequency increases, they become unbearable.\
 \
