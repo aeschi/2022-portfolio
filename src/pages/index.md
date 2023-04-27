@@ -4,7 +4,8 @@ subheading: Subheading
 templateKey: index-page
 mainpitch:
   title: Anna Eschenbacher
-  description: I create interactive installations and custom designed data visualizations.
+  description: "Hi, my name is Anna. I’m a designer and programmer. I often work
+    on data visualizations and interactive installations. "
 intro:
   blurbs:
     - image: /img/meeting-space.png
