@@ -2,8 +2,8 @@
 templateKey: blog-post
 featuredImages:
   featuredimage: /img/kiez_1_bg.jpg
-  featuredimage2: /img/kiez_5.jpeg
-  featuredimage3: /img/kiez_6.jpeg
+  featuredimage2: /img/kiez1.jpg
+  featuredimage3: /img/kiez2.jpg
 featuredimage: /img/preview_1.png
 title: "[T]räume deinen Kiez frei"
 date: 2018-12-28T17:46:52.481Z
