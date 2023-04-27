@@ -1,14 +1,14 @@
 ---
 templateKey: blog-post
 featuredImages:
-  featuredimage: /img/screenshot-2023-02-28-at-11.20.38.png
-  featuredimage2: /img/screenshot-2023-02-28-at-11.21.42.png
-  featuredimage3: /img/willyouremember2.png
+  featuredimage: /img/rongin1.png
+  featuredimage2: /img/rongin2.png
+  featuredimage3: /img/rongin3.png
 featuredimage: /img/willyouremember2.png
 title: Rongin Shagor
 date: 2018-04-06T14:04:10.000Z
 description: ""
-featuredpost: false
+featuredpost: true
 tags:
   - datavis
   - web dev.
