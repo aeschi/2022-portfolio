@@ -13,4 +13,5 @@ tags:
   - datavis
   - web dev.
 ---
-"rongin shagor - the multicolored ocean" symbolizes the variety of poetic and artistic interpretations and inspirations that emerge from a poem. They drift, embark, collide, and stay afloat - all in the same place, each marking the beginnings of different struggles in identity politics. Dreams, visions and associative imagination of poetry are reinforced by a collective growth of individual, sequential works of art - beginning with the aforementioned poem by May Ayim. The reactions of interdisciplinary artists to this work have shaped “rongin shagor” and invite others to participate.
+Rongin Shagor - the multicolored ocean - is project by Oyoun in Berlin. It shows poetic and artistic interpretations and inspirations that emerge from a poem by May Ayim. I worked on a website visualizing the network of inspiration and responses together with Zainab Tariq and Rita Eperjesi.
+
