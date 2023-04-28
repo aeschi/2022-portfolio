@@ -17,4 +17,5 @@ tags:
 ---
 D﻿ie gute Nachricht is a weekly data visualization representing good news published by the German newspaper [taz ↗](https://taz.de/).\
 \
-Together with Johanna Hartmann and [Francesca Morini ↗](https://www.morini.design/), we design each data visualization, which is printed on the cover of the zukunft section of wochentaz. The graphics display a wide range of good news such as climate protection and health improvements. We use a mix of photographic elements that convey the topic and a fitting visualization technique to map the data.
+Together with [Johanna Hartmann ↗](https://johannahartmann.de/) and [Francesca Morini ↗](https://www.morini.design/), we design each data visualization, which is printed on the cover of the zukunft section of wochentaz. The graphics display a wide range of good news such as climate protection and health improvements. We use a mix of photographic elements that convey the topic and a fitting visualization technique to map the data.
+
