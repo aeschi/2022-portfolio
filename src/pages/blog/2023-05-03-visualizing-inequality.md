@@ -2,7 +2,7 @@
 templateKey: blog-post
 title: Visualizing Inequality
 date: 2021-10-01T15:05:19.821Z
-featuredpost: "true"
+featuredpost: true
 tags:
   - data journalism
   - datavis
