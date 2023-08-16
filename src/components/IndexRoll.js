@@ -9,32 +9,46 @@ class IndexRollTemplate extends React.Component {
     const { data } = this.props;
     const { edges: posts } = data.allMarkdownRemark;
 
+    console.log(posts[7].node.id);
     return (
       <div>
         {posts &&
-          posts.map(({ node: post }, index) => (
-            <div className="intro__index__div" key={post.id}>
-              <button
-                className="intro__index__button"
-                onClick={() => scrollTo("#Scroll" + post.id)}
-                title="click to jump to project"
-              >
-                <h2 className="intro__index__button_h2">
-                  {index + 1 + ". "}
-                  {post.frontmatter.title}
-                </h2>
-                {post.frontmatter.tags && post.frontmatter.tags.length ? (
-                  <div className="intro__index__button__tags">
-                    {post.frontmatter.tags.map((tag) => (
-                      <p className="intro__index__button__tags__element" key={tag + `tag`}>
-                        {tag}
-                      </p>
-                    ))}
-                  </div>
-                ) : null}
-              </button>
-            </div>
-          ))}
+          posts.map(
+            ({ node: post }, index) =>
+              index < 7 && (
+                <div className="intro__index__div" key={post.id}>
+                  <button
+                    className="intro__index__button"
+                    onClick={() => scrollTo("#Scroll" + post.id)}
+                    title="click to jump to project"
+                  >
+                    <h2 className="intro__index__button_h2">
+                      {index + 1 + ". "}
+                      {post.frontmatter.title}
+                    </h2>
+                    {post.frontmatter.tags && post.frontmatter.tags.length ? (
+                      <div className="intro__index__button__tags">
+                        {post.frontmatter.tags.map((tag) => (
+                          <p className="intro__index__button__tags__element" key={tag + `tag`}>
+                            {tag}
+                          </p>
+                        ))}
+                      </div>
+                    ) : null}
+                  </button>
+                </div>
+              )
+          )}
+        <div className="intro__index__div">
+          <button
+            className="intro__index__button"
+            onClick={() => scrollTo("#Scroll" + posts[7].node.id)}
+            title="click to jump to archived projects"
+          >
+            <h2 className="intro__index__button_h2">Archive</h2>
+          </button>
+        </div>
+
         <button
           className="intro__index__scrollButton--desktop"
           onClick={() => scrollTo("#Scroll" + posts[0].node.id)}

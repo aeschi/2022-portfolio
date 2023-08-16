@@ -12,7 +12,7 @@ export const IndexPageTemplate = ({ mainpitch, description }) => {
     <div className="container">
       <div className="intro">
         <div className="intro__title">
-          <h1 className="intro__title_header" id={"titlePage"}>
+          <h1 className="intro__title_header" id={"titlePage"} title="Hi :)">
             {mainpitch.title}
           </h1>
         </div>
