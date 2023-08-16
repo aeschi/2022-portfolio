@@ -8,6 +8,7 @@ body
     margin: 0
     padding: 0
     font-family: PPNeueMontreal
+    background-color: $background
 
 p
     font-family: PPNeueMontreal
@@ -31,14 +32,33 @@ a
     text-decoration: none
 
 .container
-    background-color: Azure
+    // background-color: red
+    // max-width: 500px
     display: flex
     flex-direction: row
     align-items: stretch
     height: 100vh
     overflow-x: hidden
 
-@media (max-width: 1050px)
+@media (max-width: 1262px)
+    //---------intro responsive--------
+    .intro__index__button
+        flex-direction: column
+
+    .intro__index__button__tags
+        display: none
+        margin-top: 0rem
+        margin-bottom: 1rem
+        margin-left: 0.75rem
+
+    .intro__description
+        flex-direction: column
+
+    .intro__description__main
+        border-right: none
+        border-bottom: 1px solid $dark-gray
+
+@media (max-width: 1128px)
 
     .container
         flex-direction: column
@@ -49,13 +69,6 @@ a
     //---------intro responsive--------
     .intro
         width: 100vw
-
-    .intro__description
-        flex-direction: column
-
-    .intro__description__main
-        border-right: none
-        border-bottom: 1px solid $dark-gray
 
     .intro__footer
         border-bottom: 1px solid $dark-gray
@@ -71,26 +84,20 @@ a
     .intro__index__scrollButton--mobile
         visibility: visible
 
-    .intro__index__button
-        flex-direction: column
-
-    .intro__index__button__tags
-        display: none
-        margin-top: 0rem
-        margin-bottom: 1rem
-        margin-left: 0.75rem
-
     //---------projects responsive--------
     .projects
         overflow: visible
         width: 100vw
+
+@media (max-width: 650px)
+    .projects__post__imgcontainer
+        width: 90vw
 
     .projects__post__imgcontainer
         order: 1
         align-self: center
         text-align: center
         margin: 1rem
-        width: 620px
 
     .projects__post__description
         order: 2
@@ -101,13 +108,10 @@ a
     .projects__post__titlebox
         width: 100vw
         border-bottom: 1px solid $dark-gray
+        border-left: none
 
     .projects__post__titlebox__title
         order: 0
         padding-left: 1rem
         transform-origin: none
         transform: rotate(0deg) translate(0rem,0px)
-
-@media (max-width: 650px)
-    .projects__post__imgcontainer
-        width: 90vw

@@ -62,7 +62,7 @@ class BlogRollTemplate extends React.Component {
               </div>
               <div
                 className="projects__post__titlebox"
-                style={{ backgroundColor: this.state.primaryColorsTwo[index % 4] }}
+                style={{ color: this.state.primaryColorsTwo[index % 4] }}
               >
                 {/* <Link to={post.fields.slug}> */}
                 <h2 className="projects__post__titlebox__title">
