@@ -4,8 +4,8 @@ subheading: Subheading
 templateKey: index-page
 mainpitch:
   title: Anna Eschenbacher
-  description: "Hi, I'm Anna (she/her). I’m a designer and programmer. I often
-    work on data visualizations and interactive installations. "
+  description: "Hi, I'm Anna. I’m a designer and programmer. I work on data
+    visualizations and interactive installations. "
 intro:
   blurbs:
     - image: /img/meeting-space.png
@@ -33,6 +33,6 @@ main:
 image: /img/r1-04611-0000.jpg
 description: "I study Creative Technologies at Film University Babelsberg. Prior
   to that, I graduated with a Bachelor of Engineering in Audiovisual Media at
-  Stuttgart Media University. I work, research and sometimes teach in the area
-  of creative technologies, data visualization design and developement. "
+  Stuttgart Media University. I work, research and teach in the area of creative
+  technologies, data visualization design and developement. "
 ---
