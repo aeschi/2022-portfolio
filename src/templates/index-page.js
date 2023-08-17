@@ -8,6 +8,9 @@ import IndexRoll from "../components/IndexRoll";
 import { Link } from "gatsby";
 
 export const IndexPageTemplate = ({ mainpitch, description }) => {
+  const primaryColors = ["#4371A8E2", "#E9A040", "#E25D2D", "#448954"];
+  let textNumber = Math.floor(Math.random() * 4);
+
   return (
     <div className="container">
       <div className="intro">
@@ -20,7 +23,9 @@ export const IndexPageTemplate = ({ mainpitch, description }) => {
           <IndexRoll />
         </div>
         <div className="intro__description">
-          <h3 className="intro__description__main">{mainpitch.description}</h3>
+          <h3 className="intro__description__main" style={{ color: primaryColors[textNumber] }}>
+            {mainpitch.description}
+          </h3>
           {/* <div className="intro__index__cursor"></div> */}
           <div className="intro__description__extra">
             <p>{description}</p>
