@@ -11,6 +11,8 @@ export const IndexPageTemplate = ({ mainpitch, description }) => {
   const primaryColors = ["#4371A8E2", "#E9A040", "#E25D2D", "#448954"];
   let textNumber = Math.floor(Math.random() * 4);
 
+  console.log(textNumber);
+
   return (
     <div className="container">
       <div className="intro">
@@ -23,7 +25,7 @@ export const IndexPageTemplate = ({ mainpitch, description }) => {
           <IndexRoll />
         </div>
         <div className="intro__description">
-          <h3 className="intro__description__main" style={{ color: primaryColors[textNumber] }}>
+          <h3 className="intro__description__main" style={{ color: primaryColors[2] }}>
             {mainpitch.description}
           </h3>
           {/* <div className="intro__index__cursor"></div> */}
