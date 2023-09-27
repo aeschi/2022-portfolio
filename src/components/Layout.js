@@ -4,11 +4,23 @@ import { Helmet } from "react-helmet";
 import "./all.sass";
 import useSiteMetadata from "./SiteMetadata";
 import { withPrefix } from "gatsby";
+import { useState } from "react";
 
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata();
+
+  // const [isDarkMode, setIsDarkMode] = useState(false);
+
+  // const toggleTheme = () => {
+  //   setIsDarkMode(!isDarkMode);
+  //   document.documentElement.classList.toggle("dark");
+  // };
+
   return (
     <div>
+      {/* <button aria-label="Toggle Dark Mode" className="toggle-button" onClick={toggleTheme}>
+        {isDarkMode ? "dark" : "light"}
+      </button> */}
       <Helmet>
         <html lang="en" />
         <title>{title}</title>

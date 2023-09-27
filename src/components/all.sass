@@ -8,37 +8,40 @@ body
     margin: 0
     padding: 0
     font-family: PPNeueMontreal
-    background-color: $background
+    color: $dark-gray
+    border-color: $dark-gray
 
 p
     font-family: PPNeueMontreal
-    color: $dark-gray
     font-size: 1rem
     line-height: 1.35rem
 
 h1
     font-family: PPNeueMontreal Bold
-    color: $dark-gray
 
 h2,h3
     font-family: PPNeueMontreal
-    color: $dark-gray
     font-size: 1.5rem
 
 a
     font-family: PPNeueMontreal Bold
     color: $dark-gray
-    // font-weight:
     text-decoration: none
 
 .container
-    // background-color: red
-    // max-width: 500px
     display: flex
     flex-direction: row
     align-items: stretch
     height: 100vh
     overflow-x: hidden
+
+@media(prefers-color-scheme: dark)
+    body
+        background-color: #000000
+        color: $background
+        border-color: $background
+    a
+        color: $background
 
 @media (max-width: 1262px)
     //---------intro responsive--------
@@ -71,7 +74,7 @@ a
         width: 100vw
 
     .intro__footer
-        border-bottom: 1px solid $dark-gray
+        border-bottom: 1px solid
         flex-direction: column
         justify-content: space-between
 
@@ -119,7 +122,7 @@ a
 
     .projects__post__titlebox
         width: 100vw
-        border-bottom: 1px solid $dark-gray
+        border-bottom: 1px solid
         border-left: none
 
     .projects__post__titlebox__title
