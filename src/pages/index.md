@@ -5,7 +5,7 @@ templateKey: index-page
 mainpitch:
   title: Anna Eschenbacher
   description: "Hi, I'm Anna. I’m a designer and programmer. I work on data
-    visualizations and interactive installations. "
+    visualizations, web projects and interactive installations. "
 intro:
   blurbs:
     - image: /img/meeting-space.png
@@ -31,8 +31,9 @@ main:
     alt: IMAGE 3
     image: /img/chemex.jpg
 image: /img/r1-04611-0000.jpg
-description: "I study Creative Technologies at Film University Babelsberg. Prior
-  to that, I graduated with a Bachelor of Engineering in Audiovisual Media at
-  Stuttgart Media University. I work, research and teach in the area of creative
-  technologies, data visualization design and front-end developement. "
+description: "I recently finished my master degree in Creative Technologies at
+  Film University Babelsberg. Prior to that, I graduated with a Bachelor of
+  Engineering in Audiovisual Media at Stuttgart Media University. I work,
+  research and teach in the area of creative technologies, data visualization
+  design and front-end developement. "
 ---
