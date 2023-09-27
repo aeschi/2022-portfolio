@@ -3,7 +3,10 @@ templateKey: blog-post
 title: Klong Visualizer
 date: 2022-01-04T10:04:10.415Z
 description: ""
-featuredpost: false
+featuredpost: true
+tags:
+  - datavis
+  - tool development
 featuredImages:
   featuredimage: /img/klingklangklong1.jpg
   featuredimage2: /img/klingklangklong2.png
