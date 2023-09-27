@@ -3,8 +3,8 @@ templateKey: blog-post
 featuredimage2: ""
 featuredImages:
   featuredimage: /img/img_7511.jpg
-  featuredimage2: /img/img_8981.jpg
-  featuredimage3: /img/img_8155.jpg
+  featuredimage2: /img/taz_guna.jpg
+  featuredimage3: /img/img_8981.jpg
 featuredimage3: ""
 featuredimage: ""
 title: Die gute Nachricht
