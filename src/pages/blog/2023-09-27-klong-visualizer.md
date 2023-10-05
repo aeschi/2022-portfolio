@@ -7,6 +7,7 @@ featuredpost: true
 tags:
   - datavis
   - tool development
+  - shader
 featuredImages:
   featuredimage: /img/klingklangklong1.jpg
   featuredimage2: /img/klingklangklong2.png
