@@ -7,10 +7,11 @@ const Footer = class extends React.Component {
         <div className="intro__footer__links">
           <a
             className="intro__footer__links__element"
-            title="email"
+            title="send me a message"
             target="_blank"
             rel="noreferrer"
-            href="mailto:anna.eschenbacher@icloud.com"
+            // href={atob("bWFpbHRvOmFubmEuZXNjaGVuYmFjaGVyQGljbG91ZC5jb20=")}
+            href="mailto:%61%6e%6e%61%2e%65%73%63%68%65%6e%62%61%63%68%65%72%40%69%63%6c%6f%75%64%2e%63%6f%6d"
           >
             E-Mail
           </a>
