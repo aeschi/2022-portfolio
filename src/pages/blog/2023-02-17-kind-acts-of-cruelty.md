@@ -6,7 +6,7 @@ featuredImages:
   featuredimage3: /img/remnants_i_4.jpeg
 featuredimage: ""
 title: Kind Acts of Cruelty
-date: 2021-06-17T13:51:21.768Z
+date: 2021-01-09T14:51:21.768Z
 description: ""
 featuredpost: true
 tags:
